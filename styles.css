@@ -619,6 +619,7 @@ a.area-box:hover { color: #fff; background: var(--accent-dark); }
   body { font-size: 16px; }
   .section { padding: 56px 0; }
   .section-tight { padding: 44px 0; }
+  .hero::after { display: none; }
   .container { padding: 0 18px; }
   .grid-3, .grid-2, .steps, .steps-tight { grid-template-columns: 1fr; }
   .form-grid-2 { grid-template-columns: 1fr; }
