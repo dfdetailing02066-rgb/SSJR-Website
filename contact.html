@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=3">
+<link rel="stylesheet" href="/styles.css?v=4">
 <script src="/images.js?v=2"></script>
 
 <script type="application/ld+json">
@@ -217,8 +217,8 @@
             <textarea id="description" name="description" placeholder="What do you need hauled? Where is it (garage, basement, yard)? Roughly how much? Any access notes…"></textarea>
           </div>
           <div class="field">
-            <label for="photo">Photo upload <span class="muted" style="font-weight:500;">(optional)</span></label>
-            <input id="photo" name="attachment" type="file" accept="image/*" multiple>
+            <label for="photo">Photo upload <span class="muted" style="font-weight:500;">(optional, max 5MB)</span></label>
+            <input id="photo" name="attachment[]" type="file" accept="image/*" multiple>
             <span class="hint">A quick photo helps us quote faster. Trouble uploading? Just text photos to 781-470-4245.</span>
           </div>
           <button type="submit" class="btn btn-primary btn-full">Get My Free Quote <span class="arrow">→</span></button>
@@ -268,6 +268,19 @@
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
+      }
+
+      // Check file size to avoid "Request Too Long"
+      var photoInput = document.getElementById("photo");
+      if (photoInput && photoInput.files.length > 0) {
+        var totalSize = 0;
+        for (var i = 0; i < photoInput.files.length; i++) {
+          totalSize += photoInput.files[i].size;
+        }
+        if (totalSize > 5 * 1024 * 1024) { // 5MB limit
+          alert("Your photos are too large to send (max 5MB total). Please try selecting fewer/smaller images, or just text them to us at 781-470-4245.");
+          return;
+        }
       }
 
 

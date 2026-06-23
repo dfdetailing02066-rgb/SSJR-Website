@@ -601,6 +601,7 @@ a.area-box:hover { color: #fff; background: var(--accent-dark); }
   .grid-3, .steps, .steps-tight { grid-template-columns: 1fr 1fr; }
   .review-grid { grid-template-columns: 1fr; }
   .split-feature, .contact-grid, .hero-photo { grid-template-columns: 1fr; }
+  .contact-grid > form { order: -1; } /* quote form first on mobile */
   .feature-row, .feature-row.reverse { grid-template-columns: 1fr; gap: 28px; }
   .feature-row .feature-text, .feature-row.reverse .feature-text { order: 1; }
   .feature-row .feature-media, .feature-row.reverse .feature-media { order: 2; }
