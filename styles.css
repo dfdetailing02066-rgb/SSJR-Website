@@ -610,7 +610,14 @@ a.area-box:hover { color: #fff; background: var(--accent-dark); }
   .section-tight { padding: 44px 0; }
   .hero::after { display: none; }
   .container { padding: 0 18px; }
-  .feature-media img, .split-photo img { max-width: 75%; margin: 0 auto; border-radius: var(--radius-lg); }
+  .feature-media img, .split-photo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: var(--radius-lg);
+  }
   .grid-3, .grid-2, .steps, .steps-tight { grid-template-columns: 1fr; }
   .form-grid-2 { grid-template-columns: 1fr; }
   .check-list { grid-template-columns: 1fr; }
