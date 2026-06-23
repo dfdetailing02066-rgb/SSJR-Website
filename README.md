@@ -39,13 +39,27 @@ Then open the printed URL (e.g. http://localhost:3000). `npx serve` maps
 | `/faq`          | `faq.html`          | Junk Removal FAQ \| South Shore Junk Removal    |
 | `/contact`      | `contact.html`      | Contact & Free Quote \| South Shore Junk Removal|
 
+## Town landing pages (16, built)
+All 16 town pages are live at `/junk-removal-<town>` and are linked from the
+**Our Service Areas** grid on the home page (and listed in `sitemap.xml`):
+
+`scituate`, `cohasset`, `hingham`, `norwell`, `marshfield`, `hull`, `duxbury`,
+`hanover`, `pembroke`, `hanson`, `rockland`, `weymouth`, `braintree`, `quincy`,
+`plymouth`, `kingston` — e.g. `/junk-removal-scituate`
+(file `junk-removal-scituate.html`).
+
+Town hero photos are used where available (scituate, cohasset, hull, duxbury,
+marshfield, quincy, weymouth); the other 9 towns use a clean generic junk-removal
+photo as a placeholder until you supply a town-specific image.
+
 All page copy and meta titles/descriptions are taken verbatim from
 `South_Shore_Junk_Removal_Website_Copy.pdf`.
 
 ## Project structure
 ```
 index.html, how-it-works.html, services.html, faq.html, contact.html
-_town-template.html        # scaffold for future town pages (NOT live)
+junk-removal-*.html        # 16 town landing pages (built, linked from home)
+_town-template.html        # scaffold for adding MORE towns later (NOT live)
 styles.css                 # full stylesheet, CSS variables for the palette
 shared.js                  # injects header/nav + footer, mobile menu, sticky call
 images.js                  # graceful broken-image handling (handleImgError)
@@ -57,23 +71,20 @@ assets/
   logo.png, logo-small.png # trimmed/optimized logo for header & footer
   og-image.jpg / .png      # 1200x630 social/OG image (logo on white)
   opt/                     # optimized service images (webp + jpg, 540/810/1080)
-  towns/                   # optimized town images for FUTURE town pages
+  towns/                   # optimized town hero images (webp + jpg, 600/1080)
 gen-images notes           # see "Regenerating images" below
 ```
 
-## Adding town pages later (architecture is ready)
-The 16 town pages from the PDF are **not** built yet, but everything supports
-them:
+## Adding MORE town pages later (architecture is ready)
+The 16 PDF towns are already built and linked. To add another town:
 - Copy `_town-template.html` → `junk-removal-<town>.html` (served at
   `/junk-removal-<town>`). Instructions + placeholder list are in the file's
   top comment.
 - Header/footer come from `shared.js`, so town pages need zero nav markup.
-- Optimized hero images already exist for: **scituate, cohasset, hull, duxbury,
-  marshfield, quincy, weymouth** under `assets/towns/`. (The other 9 towns: hingham, norwell,
-  hanover, pembroke, hanson, rockland, braintree, plymouth, and kingston have
-  no image yet; the template degrades gracefully.)
-- After creating a town page, add its URL to `sitemap.xml` and optionally link
-  it in `shared.js` (footer `TOWNS` list).
+- Drop a hero image at `assets/towns/<slug>-junk-removal-1080.(webp|jpg)` and
+  `-600.(webp|jpg)`, or it will fall back to a generic junk-removal photo.
+- Add its URL to `sitemap.xml` and a linked box in the home-page
+  **Our Service Areas** grid (`index.html`).
 
 ## Regenerating images
 The favicons, OG image, and optimized service/town images were generated from

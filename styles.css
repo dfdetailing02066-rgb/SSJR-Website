@@ -42,7 +42,7 @@
   --shadow-lg: 0 24px 60px rgba(28, 61, 94, 0.18);
 
   --container: 1200px;
-  --header-h: 88px;
+  --header-h: 105px;
 
   --font: 'Inter Tight', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
@@ -188,7 +188,7 @@ a:hover .arrow-link .arrow, .arrow-link:hover .arrow { transform: translateX(4px
   height: var(--header-h);
 }
 .brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
-.brand img { height: 60px; width: auto; }
+.brand img { height: 75px; width: auto; }
 .brand .brand-fallback { font-weight: 900; color: var(--navy); font-size: 20px; letter-spacing: -.02em; line-height: 1; }
 
 .nav { display: flex; align-items: center; gap: 4px; }
