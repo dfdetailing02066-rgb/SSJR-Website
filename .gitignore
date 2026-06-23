@@ -1,0 +1,17 @@
+.DS_Store
+.vercel
+node_modules
+
+# Large SOURCE images (originals). The site serves the optimized copies in
+# assets/opt and assets/towns, so these don't need to deploy. Keep them locally
+# for regenerating images.
+/furniture-removal.png
+/household-junk-removal.png
+/tire-removal.png
+/cohasset-junk-removal.png
+/duxbury-junk-removal.png
+/hull-junk-removal.png
+/marshfield-junk-removal.png
+/quincy-junk-removal.png
+/scituate-junk-removal.png
+/weymouth-junk-removal.png

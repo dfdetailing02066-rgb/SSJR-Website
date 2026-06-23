@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap (swap [JUNK_REMOVAL_DOMAIN] for the real production domain)
+Sitemap: https://[JUNK_REMOVAL_DOMAIN]/sitemap.xml
