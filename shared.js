@@ -90,7 +90,7 @@
       '  <div class="container">' +
       '    <div class="footer-grid">' +
       '      <div class="footer-brand">' +
-      '        <img src="/assets/logo.png" alt="South Shore Junk Removal logo">' +
+      '        <img src="/assets/logo-white.png" alt="South Shore Junk Removal logo">' +
       '        <p>Local, family owned junk removal based in Scituate, serving the South Shore and all of Massachusetts. Same-day pickup, free onsite quotes, no hidden fees.</p>' +
       '      </div>' +
       '      <div>' +
