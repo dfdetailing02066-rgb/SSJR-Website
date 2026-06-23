@@ -79,9 +79,9 @@ ul { margin: 0 0 1rem; padding-left: 1.2rem; }
 /* ---------- Layout ---------- */
 .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 24px; }
 
-.section { padding: 88px 0; }
-.section-sm { padding: 48px 0; }
-.section-tight { padding: 56px 0; }
+.section { padding: 56px 0; }
+.section-sm { padding: 32px 0; }
+.section-tight { padding: 40px 0; }
 
 .section-light { background: var(--white); }
 .section-surface { background: var(--surface-tint); }
@@ -414,11 +414,11 @@ a:hover .arrow-link .arrow, .arrow-link:hover .arrow { transform: translateX(4px
 .review-source { font-size: 13px; color: var(--text-muted); }
 
 /* ---------- Booking nudge / CTA bands ---------- */
-.booking-nudge { background: var(--accent); color: #fff; padding: 40px 0; }
+.booking-nudge { background: var(--accent); color: #fff; padding: 32px 0; }
 .nudge-row { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
 .nudge-row h3 { color: #fff; font-size: clamp(1.3rem, 2.4vw, 1.7rem); margin: 0; max-width: 60ch; }
 
-.closing-cta { background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%); color: #fff; text-align: center; padding: 88px 0; position: relative; overflow: hidden; }
+.closing-cta { background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%); color: #fff; text-align: center; padding: 64px 0; position: relative; overflow: hidden; }
 .closing-cta::after { content: ""; position: absolute; left: 50%; top: -40%; transform: translateX(-50%); width: 80%; height: 140%; background: radial-gradient(circle at center, rgba(79,163,221,0.25), transparent 60%); }
 .closing-cta .container { position: relative; z-index: 2; }
 .closing-cta h2 { color: #fff; }
@@ -520,7 +520,7 @@ a.area-box:hover { color: #fff; background: var(--accent-dark); }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 
 /* ---------- Footer ---------- */
-.site-footer { background: var(--navy-deep); color: rgba(255, 255, 255, 0.82); padding: 64px 0 28px; }
+.site-footer { background: var(--navy-deep); color: rgba(255, 255, 255, 0.82); padding: 48px 0 28px; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; }
 .site-footer h4 { color: #fff; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
 .footer-brand img { height: 58px; width: auto; margin-bottom: 16px; }
@@ -607,8 +607,8 @@ a.area-box:hover { color: #fff; background: var(--accent-dark); }
 
 @media (max-width: 600px) {
   body { font-size: 16px; }
-  .section { padding: 56px 0; }
-  .section-tight { padding: 44px 0; }
+  .section { padding: 40px 0; }
+  .section-tight { padding: 32px 0; }
   .hero::after { display: none; }
   .container { padding: 0 18px; }
   .feature-media img, .split-photo img {
@@ -627,8 +627,8 @@ a.area-box:hover { color: #fff; background: var(--accent-dark); }
   .btn { width: 100%; }
   .btn-row { flex-direction: column; }
   .nudge-row { flex-direction: column; align-items: flex-start; }
-  .closing-cta { padding: 48px 0; }
-  .site-footer { padding-top: 40px; }
+  .closing-cta { padding: 36px 0; }
+  .site-footer { padding-top: 32px; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-brand { display: flex; flex-direction: column; align-items: center; text-align: center; }
   .footer-brand img { height: 140px; margin-bottom: 24px; }
