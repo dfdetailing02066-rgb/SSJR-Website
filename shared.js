@@ -61,9 +61,9 @@
       '    <nav class="nav" aria-label="Primary">' + navLinksHTML(path) + '</nav>' +
       '    <div class="header-cta">' +
       '      <a class="header-phone d-only" href="tel:' + PHONE_TEL + '">' + phoneIcon + " " + PHONE_DISPLAY + "</a>" +
-      '      <a class="btn btn-primary d-only" href="/contact">Get a Quote</a>' +
+      '      <a class="btn btn-primary d-only" href="/contact#quote-form">Get a Quote</a>' +
       '      <a class="btn btn-secondary m-only-btn" href="tel:' + PHONE_TEL + '">' + phoneIcon + ' Call</a>' +
-      '      <a class="btn btn-primary m-only-btn" href="/contact">Quote</a>' +
+      '      <a class="btn btn-primary m-only-btn" href="/contact#quote-form">Quote</a>' +
       '      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">' +
       '        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>' +
       '      </button>' +
@@ -78,7 +78,7 @@
       '      <button class="mobile-nav-close" type="button" aria-label="Close menu">&times;</button>' +
       '    </div>' +
       navLinksHTML(path) +
-      '    <a class="btn btn-primary" href="/contact">Get a Free Quote</a>' +
+      '    <a class="btn btn-primary" href="/contact#quote-form">Get a Free Quote</a>' +
       '    <a class="btn btn-secondary m-call" href="tel:' + PHONE_TEL + '">' + phoneIcon + " Call " + PHONE_DISPLAY + "</a>" +
       '  </div>' +
       '</div>';
