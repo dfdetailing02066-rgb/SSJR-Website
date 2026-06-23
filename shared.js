@@ -60,16 +60,14 @@
       '    </a>' +
       '    <nav class="nav" aria-label="Primary">' + navLinksHTML(path) + '</nav>' +
       '    <div class="header-cta">' +
-      '      <a class="header-phone" href="tel:' + PHONE_TEL + '">' + phoneIcon + " " + PHONE_DISPLAY + "</a>" +
-      '      <a class="btn btn-primary" href="/contact">Get a Quote</a>' +
+      '      <a class="header-phone d-only" href="tel:' + PHONE_TEL + '">' + phoneIcon + " " + PHONE_DISPLAY + "</a>" +
+      '      <a class="btn btn-primary d-only" href="/contact">Get a Quote</a>' +
+      '      <a class="btn btn-secondary m-only-btn" href="tel:' + PHONE_TEL + '">' + phoneIcon + ' Call</a>' +
+      '      <a class="btn btn-primary m-only-btn" href="/contact">Quote</a>' +
       '      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">' +
       '        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>' +
       '      </button>' +
       '    </div>' +
-      '  </div>' +
-      '  <div class="mobile-header-bar">' +
-      '    <a href="tel:' + PHONE_TEL + '" class="btn btn-secondary">' + phoneIcon + ' Call</a>' +
-      '    <a href="/contact" class="btn btn-primary">Free Quote <span class="arrow">→</span></a>' +
       '  </div>' +
       '</header>' +
       // Mobile nav drawer
