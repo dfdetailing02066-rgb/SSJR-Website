@@ -67,6 +67,10 @@
       '      </button>' +
       '    </div>' +
       '  </div>' +
+      '  <div class="mobile-header-bar">' +
+      '    <a href="tel:' + PHONE_TEL + '" class="btn btn-secondary">' + phoneIcon + ' Call</a>' +
+      '    <a href="/contact" class="btn btn-primary">Free Quote <span class="arrow">→</span></a>' +
+      '  </div>' +
       '</header>' +
       // Mobile nav drawer
       '<div class="mobile-nav" id="mobileNav" role="dialog" aria-modal="true" aria-label="Site menu">' +
@@ -122,14 +126,7 @@
       '      <span>Licensed &amp; Insured · Scituate, MA</span>' +
       '    </div>' +
       '  </div>' +
-      '</footer>' +
-      // Sticky mobile bottom bar
-      '<div class="sticky-call">' +
-      '  <div class="sticky-call-inner">' +
-      '    <a href="tel:' + PHONE_TEL + '" class="btn btn-secondary">' + phoneIcon + ' Call</a>' +
-      '    <a href="/contact" class="btn btn-primary">Free Quote <span class="arrow">→</span></a>' +
-      '  </div>' +
-      '</div>';
+      '</footer>';
   }
 
   function wireMobileNav() {
