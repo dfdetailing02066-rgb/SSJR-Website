@@ -172,8 +172,7 @@
       <!-- Quote form -->
       <form id="quoteForm" class="form-card" novalidate>
         <!-- Web3Forms configuration (mirror of the detailing site's submission method) -->
-        <!-- NOTE: Replace the access key below with one generated for junkremovalsouthshore@gmail.com -->
-        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+        <input type="hidden" name="access_key" value="1ddcad41-65bb-4e30-8c6f-6f9a3637de57">
         <input type="hidden" name="subject" value="New Quote Request from South Shore Junk Removal">
         <input type="hidden" name="from_name" value="South Shore Junk Removal Website">
         <!-- Honeypot spam filter -->
@@ -271,12 +270,6 @@
         return;
       }
 
-      // Guard: remind to set the Web3Forms access key before going live
-      var accessKeyInput = form.querySelector('input[name="access_key"]');
-      if (accessKeyInput.value === "YOUR_WEB3FORMS_ACCESS_KEY_HERE") {
-        alert("Setup step needed:\n\nReplace 'YOUR_WEB3FORMS_ACCESS_KEY_HERE' in contact.html with the Web3Forms access key generated for junkremovalsouthshore@gmail.com so quote requests reach your inbox.");
-        return;
-      }
 
       var originalBtnText = submitBtn.innerHTML;
       submitBtn.disabled = true;
