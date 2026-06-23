@@ -123,9 +123,12 @@
       '    </div>' +
       '  </div>' +
       '</footer>' +
-      // Sticky mobile call button
+      // Sticky mobile bottom bar
       '<div class="sticky-call">' +
-      '  <a href="tel:' + PHONE_TEL + '">' + phoneIcon + ' Call ' + PHONE_DISPLAY + ' · Free Quote</a>' +
+      '  <div class="sticky-call-inner">' +
+      '    <a href="tel:' + PHONE_TEL + '" class="btn btn-secondary">' + phoneIcon + ' Call</a>' +
+      '    <a href="/contact" class="btn btn-primary">Free Quote <span class="arrow">→</span></a>' +
+      '  </div>' +
       '</div>';
   }
 
