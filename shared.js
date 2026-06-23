@@ -153,9 +153,18 @@
   }
 
   function init() {
+    var promoStrip = document.querySelector(".promo-strip");
     var headerMount = document.getElementById("site-header");
     var footerMount = document.getElementById("site-footer");
-    if (headerMount) headerMount.outerHTML = buildHeader();
+    
+    if (headerMount) {
+      headerMount.outerHTML = buildHeader();
+      var actualHeader = document.querySelector(".site-header");
+      if (actualHeader && promoStrip) {
+        actualHeader.insertBefore(promoStrip, actualHeader.firstChild);
+      }
+    }
+    
     if (footerMount) footerMount.outerHTML = buildFooter();
     wireMobileNav();
   }
