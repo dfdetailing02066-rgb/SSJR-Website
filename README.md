@@ -123,7 +123,7 @@ leads to the detailing inbox). In `contact.html` replace:
 YOUR_WEB3FORMS_ACCESS_KEY_HERE
 ```
 
-with a key created at https://web3forms.com using **junkremovalsouthshore@gmail.com**.
+with a key created at https://web3forms.com using **dfdetailing02066@gmail.com**.
 Web3Forms delivers submissions to the email tied to the key, so this is how
 quote requests reach the junk-removal inbox. (Until it's replaced, the form
 shows a friendly "setup step needed" alert instead of failing silently. No keys
