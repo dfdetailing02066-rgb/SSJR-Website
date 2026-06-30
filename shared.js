@@ -10,7 +10,7 @@
 
   var PHONE_DISPLAY = "781-470-4245";
   var PHONE_TEL = "7814704245";
-  var EMAIL = "DFdetailing02066@gmail.com";
+  var EMAIL = "southshorejunkremoval@gmail.com";
 
   // Primary navigation. Clean URLs (no .html), served by Vercel cleanUrls.
   var NAV = [
